@@ -1,0 +1,48 @@
+body {
+  width: 960px;
+
+}
+
+nav {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+
+
+.navitem {
+  text-transform: uppercase;
+  display: inline;
+  font-size: 11px;
+  margin: 50px;
+}
+
+article {
+  display: inline-block;
+  width: 420px;
+}
+
+.section {
+color: #b4ad9e;
+text-transform: uppercase;
+}
+
+li {
+  display: inline-block;
+  width: 420px;
+  margin-right: 30px;
+}
+
+p {
+  display: inline-block;
+  width: 420px;
+}
+img {
+  display: inline-block;
+  height: 280px;
+  width: 420px;
+}
+nav>ul>li.navitem.lifestyle {
+  color: aqua
+}
