@@ -1,20 +1,22 @@
 body {
   width: 1200px;
   font-family: "Playfair Display";
-  margin: auto
-
+  margin: auto;
 }
 
-nav {
+li {
+  display: inline-block;
+}
+
+.header {
   margin-left: 310px;
   margin-right: 310px;
 }
 
 .navitem {
   text-transform: uppercase;
-  display: inline-block;
   font-size: 14px;
-  margin: 75px 30px ;
+  margin: 75px 30px;
 }
 
 a {
@@ -36,14 +38,16 @@ a:active {
   border-bottom: 1px dashed;
 }
 
-main {
-margin-right: 90px;
-margin-left: 90px;
+.main {
+  margin-right: 90px;
+  margin-left: 90px;
 }
 
-article {
+.article {
   margin: 30px;
   height: 550px;
+  width: 420px;
+  color: #626262;
 }
 
 .article_name {
@@ -51,29 +55,20 @@ article {
   text-transform: uppercase;
 }
 
-li {
-  display: inline-block;
+.title {
+  font-size: 30px;
 }
 
-h2 {
-  color: #626262;
-font-size: 30px;
-}
-
-p {
-  color: #626262;
-  width: 420px;
-}
-img {
+.image {
   height: 280px;
   width: 420px;
 }
 
-button {
+.button {
   width: 165px;
   height: 60px;
   font-size: 20px;
-  color: rgb(98, 98, 98);
+  color: #626262;
   /* margin-right: 45%; */
   margin-left: 42%;
 }
