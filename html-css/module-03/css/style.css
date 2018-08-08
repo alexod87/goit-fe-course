@@ -59,12 +59,13 @@ a:active {
   font-size: 30px;
 }
 
-.image {
+/* .image {
   height: 280px;
   width: 420px;
-}
+} */
 
 .button {
+  cursor: wait;
   width: 165px;
   height: 60px;
   font-size: 20px;
