@@ -1,0 +1,28 @@
+
+.box {
+    width: 200px;
+    margin: 0 auto;
+}
+
+
+
+li:nth-of-type(n + 2) {color: red; }
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+hr > *::first-child {
+
+}
+input[type="text"]::checked {
+
+}
+li::first-line::first-letter {
+
+}
+.menu:hover > .submenu {
+
+}
