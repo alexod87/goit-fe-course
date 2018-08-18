@@ -44,8 +44,6 @@ body {
   color: #497ddd;
 }
 
-/* _____________!_!_!_!_!____________ */
-
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden{
@@ -65,7 +63,7 @@ input[type="radio"].visually-hidden{
   font-size: 0;
   padding: 0;
   margin: 0;
-  margin-bottom: 28px;
+  margin-bottom: 16px;
 }
 
 .main li{
@@ -89,6 +87,7 @@ input[type="radio"].visually-hidden{
 .article {
   display: inline-block;
   width: 420px;
+  margin-bottom: 18px;
 }
 
 .image {
@@ -116,7 +115,6 @@ input[type="radio"].visually-hidden{
   line-height: 23px;
   font-size: 14px;
   margin: 0px;
-  margin-bottom: 14px;
 }
 
 .button {
@@ -133,7 +131,6 @@ input[type="radio"].visually-hidden{
   border: 1px solid #626262;
   outline: none;
   background-color: #fff;
-  /* font-weight: bold; */
 }
 
 .button:hover {
