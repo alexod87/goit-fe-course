@@ -1,28 +1,255 @@
-
-.box {
-    width: 200px;
-    margin: 0 auto;
+html {
+  box-sizing: border-box;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 
-li:nth-of-type(n + 2) {color: red; }
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+body {
+  font-family: roboto;
+  margin: 0px;
+  padding: 0px;
+}
+
+.page_container {
+  width: 1110px;
+  margin: 0 auto;
+  margin-bottom: 100px;
+}
+
+.page-header {
+  text-transform: uppercase;
+  padding: 33px 0px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 11px;
+}
+
+.nav a {
+  text-decoration: none;
+  float: left;
+}
+
+.nav a:first-child::first-letter {
+  color: #1abc9c;
+  font-size: 30px;
+  font-weight: 900;
+  line-height: 32px;
+}
+
+.nav a:first-child {
+  margin-right: 550px;
+  font-size: 30px;
+  color: #555252;
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 32px;
+}
+
+.nav > a:not(:first-child) {
+  padding: 10px;
+  color: #0f0101;
+  padding-right: 23px;
+}
+.nav a:last-child {
+  padding-right: 0;
+  margin-right: 0;
+}
+
+.nav a:hover {
+  color: #1abc9c;
+}
+
+.article_head1 {
+  text-transform: uppercase;
+  color: #515151;
+  font-size: 48px;
+  font-weight: 900;
+  line-height: 92px;
+  text-align: center;
+  padding-bottom: 55px;
+}
+
+.article_head1::after {
+  background-color: #1abc9c;
+  width: 164px;
+  height: 7px;
+  margin: 0 auto;
+  display: block;
+  content: "";
+}
+
+.market {
+  margin-bottom: 76px;
+}
+.box {
+  position: relative;
+  width: 255px;
+  height: 322px;
+  background: #e9f0fd;
+  float: left;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+  line-height: 282px;
+}
+
+.box:hover .product {
+  background-color: #1abc9c;
+}
+
+.box:nth-child(4n) {
+  margin-right: 0;
+}
+
+.box:nth-child(n + 4) {
+  margin-bottom: 0;
+}
+
+.box > img {
+  display: inline;
+  vertical-align: middle;
+}
+
+.product {
+  position: absolute;
+  background-color: #323232;
+  width: 255px;
+  height: 40px;
+  text-transform: uppercase;
+  margin: 0px;
+  padding-left: 15px;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 40px;
+  text-align: left;
+  float: left;
+}
+
+.price {
+  position: absolute;
+  right: 0;
+  margin: 0px;
+  background-color: rgba(255, 255, 255, 0.44);
+  width: 54px;
+  height: 40px;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 40px;
+  text-align: center;
+  float: right;
+}
+
+.article_head2 {
+  text-transform: uppercase;
+  color: #515151;
+  font-size: 48px;
+  font-weight: 900;
+  line-height: 92px;
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.article_head2::after {
+  background-color: #1abc9c;
+  width: 164px;
+  height: 7px;
+  margin: 0 auto;
+  display: block;
+  content: "";
+}
+
+.news {
+  margin: 0;
+  margin-right: 30px;
+  padding: 0;
+  width: 350px;
+  float: left;
+}
+
+.news:last-child {
+  margin-right: 0;
+}
+
+.title {
+  margin: 0;
+  padding-top: 10px;
+  margin-bottom: 22px;
+  color: #555252;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 26px;
+  text-align: left;
+}
+
+.title::after {
+  background-color: #1abc9c;
+  width: 136px;
+  height: 3px;
+  margin: 0;
+  margin-top: 7px;
+  display: block;
+  content: "";
+}
+
+.paragraph {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: left;
+  margin-bottom: 12px;
+}
+
+.button {
+  border: none;
+  outline: none;
+  color: #ffffff;
+  font-size: 15.9px;
+  font-weight: 300;
+  line-height: 26px;
+  text-align: center;
+  border-radius: 3px;
+  background-color: #4ec6ab;
+  padding: 12px 44px;
+}
+
+.button:hover {
+  color: #4ec6ab;
+  font-weight: bold;
+  background-color: transparent;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.24);
+  cursor: url(http://ani.cursors-4u.net/movie/mov-2/mov138.cur), auto ;
+}
 
 .clearfix::after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-hr > *::first-child {
-
-}
-input[type="text"]::checked {
-
-}
-li::first-line::first-letter {
-
-}
-.menu:hover > .submenu {
-
+  display: table;
+  content: "";
+  clear: both;
 }
