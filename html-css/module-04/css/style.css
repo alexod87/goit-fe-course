@@ -196,10 +196,11 @@ body {
 .news_list li:last-child {
   margin-right: 0;
 }
-
+.news img {
+  margin-bottom: 10px;
+}
 .title {
   margin: 0;
-  padding-top: 10px;
   margin-bottom: 22px;
   color: #555252;
   font-size: 18px;
