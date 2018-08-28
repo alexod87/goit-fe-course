@@ -35,7 +35,7 @@ body {
   padding: 0px;
 }
 
-.page_container {
+.container {
   width: 1110px;
   margin: 0 auto;
   margin-bottom: 100px;
@@ -43,70 +43,89 @@ body {
 
 .page-header {
   text-transform: uppercase;
-  padding: 33px 0px;
+  padding: 26px 0px;
+  margin-bottom: 55px;
   font-size: 14px;
   font-weight: 700;
-  line-height: 11px;
+  line-height: 17px;
 }
 
-.nav a {
-  text-decoration: none;
-  float: left;
-}
-
-.nav a:first-child::first-letter {
+.logo::first-letter {
   color: #1abc9c;
   font-size: 30px;
   font-weight: 900;
   line-height: 32px;
 }
 
-.nav a:first-child {
-  margin-right: 550px;
+.logo {
+  padding: 7px 0px;
+  text-decoration: none;
   font-size: 30px;
   color: #555252;
-  font-size: 30px;
   font-weight: 300;
   line-height: 32px;
+  float: left;
+  display: block;
 }
-
-.nav > a:not(:first-child) {
-  padding: 10px;
+.nav {
+  float: right;
+}
+.nav ul {
+  margin: 0;
+  padding: 0;
+}
+.nav li {
+  display: inline-block;
+  padding: 13px 16.5px;
+  float: left;
+}
+.nav a {
+  display: block;
+  text-decoration: none;
   color: #0f0101;
-  padding-right: 23px;
 }
-.nav a:last-child {
+.nav li:last-child {
   padding-right: 0;
   margin-right: 0;
 }
 
-.nav a:hover {
+.nav li:hover a {
   color: #1abc9c;
 }
 
-.article_head1 {
+.article_head {
+  margin: 0;
   text-transform: uppercase;
   color: #515151;
   font-size: 48px;
   font-weight: 900;
-  line-height: 92px;
+  line-height: 57.6px;
   text-align: center;
-  padding-bottom: 55px;
+  margin-bottom: 92px;
 }
 
-.article_head1::after {
+.article_head::after {
   background-color: #1abc9c;
   width: 164px;
   height: 7px;
   margin: 0 auto;
+  margin-top: 20px;
   display: block;
   content: "";
 }
 
 .market {
-  margin-bottom: 76px;
+  margin-bottom: 94px;
 }
-.box {
+.market > ul {
+  display: block;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.market li {
+  display: block;
   position: relative;
   width: 255px;
   height: 322px;
@@ -115,28 +134,23 @@ body {
   margin-right: 30px;
   margin-bottom: 30px;
   text-align: center;
-  line-height: 282px;
 }
 
 .box:hover .product {
   background-color: #1abc9c;
 }
 
-.box:nth-child(4n) {
+.market li:nth-child(4n) {
   margin-right: 0;
 }
 
-.box:nth-child(n + 4) {
+.market li:nth-last-child(-n + 4) {
   margin-bottom: 0;
-}
-
-.box > img {
-  display: inline;
-  vertical-align: middle;
 }
 
 .product {
   position: absolute;
+  bottom: 0;
   background-color: #323232;
   width: 255px;
   height: 40px;
@@ -148,12 +162,12 @@ body {
   font-weight: 900;
   line-height: 40px;
   text-align: left;
-  float: left;
 }
 
 .price {
   position: absolute;
   right: 0;
+  bottom: 0;
   margin: 0px;
   background-color: rgba(255, 255, 255, 0.44);
   width: 54px;
@@ -163,29 +177,15 @@ body {
   font-weight: 900;
   line-height: 40px;
   text-align: center;
-  float: right;
 }
 
-.article_head2 {
-  text-transform: uppercase;
-  color: #515151;
-  font-size: 48px;
-  font-weight: 900;
-  line-height: 92px;
-  text-align: center;
-  padding-bottom: 40px;
+.news_list ul {
+  margin: 0;
+  padding: 0;
 }
 
-.article_head2::after {
-  background-color: #1abc9c;
-  width: 164px;
-  height: 7px;
-  margin: 0 auto;
-  display: block;
-  content: "";
-}
-
-.news {
+.news_list li {
+  list-style: none;
   margin: 0;
   margin-right: 30px;
   padding: 0;
@@ -193,7 +193,7 @@ body {
   float: left;
 }
 
-.news:last-child {
+.news_list li:last-child {
   margin-right: 0;
 }
 
@@ -231,13 +231,13 @@ body {
   border: none;
   outline: none;
   color: #ffffff;
-  font-size: 15.9px;
+  font-size: 16px;
   font-weight: 300;
-  line-height: 26px;
+  line-height: 19px;
   text-align: center;
   border-radius: 3px;
   background-color: #4ec6ab;
-  padding: 12px 44px;
+  padding: 16px 43px;
 }
 
 .button:hover {
@@ -245,7 +245,7 @@ body {
   font-weight: bold;
   background-color: transparent;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.24);
-  cursor: url(http://ani.cursors-4u.net/movie/mov-2/mov138.cur), auto ;
+  cursor: url(http://ani.cursors-4u.net/movie/mov-2/mov138.cur), auto;
 }
 
 .clearfix::after {
