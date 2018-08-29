@@ -73,6 +73,7 @@ body {
 .nav ul {
   margin: 0;
   padding: 0;
+  background: #222;
 }
 .nav li {
   display: inline-block;
@@ -148,9 +149,13 @@ body {
   margin-bottom: 0;
 }
 
-.product {
+.absolute{
   position: absolute;
+  margin: 0;
   bottom: 0;
+}
+
+.product {
   background-color: #323232;
   width: 255px;
   height: 40px;
@@ -166,9 +171,9 @@ body {
 
 .price {
   position: absolute;
+  margin: 0;
   right: 0;
   bottom: 0;
-  margin: 0px;
   background-color: rgba(255, 255, 255, 0.44);
   width: 54px;
   height: 40px;
@@ -229,6 +234,8 @@ body {
 }
 
 .button {
+  display: block;
+  width: 164px;
   text-decoration: none;
   border: none;
   outline: none;
