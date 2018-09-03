@@ -1,24 +1,263 @@
 html {
-    box-sizing: border-box;
-  }
-  
-  *,
-  *::before,
-  *::after {
-    box-sizing: inherit;
-  }
+  box-sizing: border-box;
+}
 
-  .visually-hidden:not(:focus):not(:active),
-  input[type="checkbox"].visually-hidden,
-  input[type="radio"].visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-  }  
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.clearfix::after {
+  display: table;
+  content: "";
+  clear: both;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+body {
+  font-family: roboto;
+  margin: 0px;
+  padding: 0px;
+}
+
+.container {
+  width: 1110px;
+  margin: 0 auto;
+  margin-bottom: 100px;
+}
+
+.page-header {
+  text-transform: uppercase;
+  padding: 26px 0px;
+  margin-bottom: 55px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 17px;
+}
+
+.logo::first-letter {
+  color: #1abc9c;
+  font-size: 30px;
+  font-weight: 900;
+  line-height: 32px;
+}
+
+.logo {
+  padding: 7px 0px;
+  text-decoration: none;
+  font-size: 30px;
+  color: #555252;
+  font-weight: 300;
+  line-height: 32px;
+  float: left;
+  display: block;
+}
+.nav {
+  float: right;
+}
+.nav ul {
+  margin: 0;
+  padding: 0;
+}
+.nav li {
+  display: inline-block;
+  padding: 13px 16.5px;
+  float: left;
+}
+.nav a {
+  display: block;
+  text-decoration: none;
+  color: #0f0101;
+}
+.nav li:last-child {
+  padding-right: 0;
+  margin-right: 0;
+}
+
+.nav li:hover a {
+  color: #1abc9c;
+}
+
+/* 
+SLIDER
+*/
+
+.slider{
+  background-image: url(/img/main_pic.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.slider-title{
+  position: relative;
+  min-height: 600px;
+}
+
+.slider-ctrl{
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  border: 0;
+  background-color: rgba(139, 69, 19, 0.7);
+  border-radius: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.slider-ctrl-prev{
+  left: 0;
+}
+
+.slider-ctrl-next{
+  right: 0;
+}
+
+.slides-list{
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 45%;
+  left: 18%;
+  transform: translateY(-50%);
+  width: 840px;
+  list-style: none;
+}
+
+.slides-item p{
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+}
+
+.slides-title{
+  font-size: 60px;
+  line-height: 82px;
+  font-weight: 600;
+}
+
+.slides-descr{
+  font-size: 34px;
+  line-height: 54px;
+  font-weight: 600;
+}
+
+/* 
+MARKET
+*/
+
+.article_head {
+  margin: 0;
+  text-transform: uppercase;
+  color: #515151;
+  font-size: 48px;
+  font-weight: 900;
+  line-height: 57.6px;
+  text-align: center;
+  margin-bottom: 92px;
+}
+
+.article_head::after {
+  background-color: #1abc9c;
+  width: 164px;
+  height: 7px;
+  margin: 0 auto;
+  margin-top: 20px;
+  display: block;
+  content: "";
+}
+
+.market_place {
+  margin-bottom: 94px;
+}
+.market {
+  display: block;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.market li {
+  display: block;
+  position: relative;
+  width: 255px;
+  height: 322px;
+  background: #e9f0fd;
+  float: left;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.market li:hover .product {
+  background-color: #1abc9c;
+}
+
+.market li:nth-child(4n) {
+  margin-right: 0;
+}
+
+.market li:nth-last-child(-n + 4) {
+  margin-bottom: 0;
+}
+
+.absolute {
+  position: absolute;
+  margin: 0;
+  bottom: 0;
+}
+
+.product {
+  background-color: #323232;
+  width: 255px;
+  height: 40px;
+  text-transform: uppercase;
+  margin: 0px;
+  padding-left: 15px;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 40px;
+  text-align: left;
+}
+
+.price {
+  position: absolute;
+  margin: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.44);
+  width: 54px;
+  height: 40px;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 40px;
+  text-align: center;
+}
