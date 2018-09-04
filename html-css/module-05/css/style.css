@@ -44,13 +44,12 @@ body {
 .container {
   width: 1110px;
   margin: 0 auto;
-  margin-bottom: 100px;
 }
 
 .page-header {
   text-transform: uppercase;
-  padding: 26px 0px;
-  margin-bottom: 55px;
+  padding: 26px 0px 20px 0px;
+  margin-bottom: 0px;
   font-size: 14px;
   font-weight: 700;
   line-height: 17px;
@@ -104,30 +103,48 @@ SLIDER
 */
 
 .slider{
-  background-image: url(/img/main_pic.jpg);
+  background-color: #000000;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  margin-bottom: 88px;
+}
+.background{
+ background-image: url(/img/main_pic.jpg);
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+ opacity: 0.7;
+}
+
+.background:hover{
+  opacity: 1;
 }
 
 .slider-title{
   position: relative;
   min-height: 600px;
+  
 }
 
 .slider-ctrl{
+  margin: 0;
+  padding: 0;
   display: inline-block;
-  width: 100px;
-  height: 100px;
+  width: 104px;
+  height: 104px;
   border: 0;
-  background-color: rgba(139, 69, 19, 0.7);
-  border-radius: 100%;
+  background-color: #1abc9caa;
   position: absolute;
-  top: 50%;
+  top: 47%;
   transform: translateY(-50%);
   color: #fff;
   font-size: 18px;
   cursor: pointer;
+}
+
+.slider-ctrl:hover{
+  background-color: #1abc9c;
 }
 
 .slider-ctrl-prev{
@@ -142,15 +159,15 @@ SLIDER
   padding: 0;
   margin: 0;
   position: absolute;
-  top: 45%;
+  top: 42%;
   left: 18%;
   transform: translateY(-50%);
-  width: 840px;
+  width: 800px;
   list-style: none;
 }
 
 .slides-item p{
-  color: #fff;
+  color: #ffffff;
   margin: 0;
   padding: 0;
   text-transform: uppercase;
@@ -158,14 +175,14 @@ SLIDER
 
 .slides-title{
   font-size: 60px;
-  line-height: 82px;
+  line-height: 104px;
   font-weight: 600;
 }
 
 .slides-descr{
-  font-size: 34px;
-  line-height: 54px;
-  font-weight: 600;
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 300;
 }
 
 /* 
@@ -180,7 +197,7 @@ MARKET
   font-weight: 900;
   line-height: 57.6px;
   text-align: center;
-  margin-bottom: 92px;
+  margin-bottom: 82px;
 }
 
 .article_head::after {
@@ -195,6 +212,7 @@ MARKET
 
 .market_place {
   margin-bottom: 94px;
+  background-color: #e9f0fd;
 }
 .market {
   display: block;
