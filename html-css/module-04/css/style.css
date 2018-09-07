@@ -15,8 +15,8 @@ img {
 }
 
 .visually-hidden:not(:focus):not(:active),
-input[type="checkbox"].visually-hidden,
-input[type="radio"].visually-hidden {
+input[type='checkbox'].visually-hidden,
+input[type='radio'].visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -67,23 +67,28 @@ body {
   float: left;
   display: block;
 }
+
 .nav {
   float: right;
 }
+
 .nav ul {
   margin: 0;
   padding: 0;
 }
+
 .nav li {
   display: inline-block;
   padding: 13px 16.5px;
   float: left;
 }
+
 .nav a {
   display: block;
   text-decoration: none;
   color: #0f0101;
 }
+
 .nav li:last-child {
   padding-right: 0;
   margin-right: 0;
@@ -111,12 +116,13 @@ body {
   margin: 0 auto;
   margin-top: 20px;
   display: block;
-  content: "";
+  content: '';
 }
 
 .market_place {
   margin-bottom: 94px;
 }
+
 .market {
   display: block;
   list-style: none;
@@ -148,7 +154,7 @@ body {
   margin-bottom: 0;
 }
 
-.absolute{
+.absolute {
   position: absolute;
   margin: 0;
   bottom: 0;
@@ -200,9 +206,11 @@ body {
 .news_list li:last-child {
   margin-right: 0;
 }
+
 .news img {
   margin-bottom: 10px;
 }
+
 .title {
   margin: 0;
   margin-bottom: 22px;
@@ -220,7 +228,7 @@ body {
   margin: 0;
   margin-top: 7px;
   display: block;
-  content: "";
+  content: '';
 }
 
 .paragraph {
@@ -256,9 +264,8 @@ body {
   cursor: url(http://ani.cursors-4u.net/movie/mov-2/mov138.cur), auto;
 }
 
-
 .clearfix::after {
   display: table;
-  content: "";
+  content: '';
   clear: both;
 }

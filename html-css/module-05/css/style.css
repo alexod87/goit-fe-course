@@ -10,7 +10,7 @@ html {
 
 .clearfix::after {
   display: table;
-  content: "";
+  content: '';
   clear: both;
 }
 
@@ -21,8 +21,8 @@ img {
 }
 
 .visually-hidden:not(:focus):not(:active),
-input[type="checkbox"].visually-hidden,
-input[type="radio"].visually-hidden {
+input[type='checkbox'].visually-hidden,
+input[type='radio'].visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -72,23 +72,28 @@ body {
   float: left;
   display: block;
 }
+
 .nav {
   float: right;
 }
+
 .nav ul {
   margin: 0;
   padding: 0;
 }
+
 .nav li {
   display: inline-block;
   padding: 13px 16.5px;
   float: left;
 }
+
 .nav a {
   display: block;
   text-decoration: none;
   color: #0f0101;
 }
+
 .nav li:last-child {
   padding-right: 0;
   margin-right: 0;
@@ -98,36 +103,36 @@ body {
   color: #1abc9c;
 }
 
-/* 
+/*
 SLIDER
 */
 
-.slider{
+.slider {
   background-color: #000000;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   margin-bottom: 88px;
 }
-.background{
- background-image: url(/img/main_pic.jpg);
- background-position: center;
- background-repeat: no-repeat;
- background-size: cover;
- opacity: 0.7;
+
+.background {
+  background-image: url(/img/main_pic.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.7;
 }
 
-.background:hover{
+.background:hover {
   opacity: 1;
 }
 
-.slider-title{
+.slider-title {
   position: relative;
   min-height: 600px;
-  
 }
 
-.slider-ctrl{
+.slider-ctrl {
   margin: 0;
   padding: 0;
   display: inline-block;
@@ -143,19 +148,19 @@ SLIDER
   cursor: pointer;
 }
 
-.slider-ctrl:hover{
+.slider-ctrl:hover {
   background-color: #1abc9c;
 }
 
-.slider-ctrl-prev{
+.slider-ctrl-prev {
   left: 0;
 }
 
-.slider-ctrl-next{
+.slider-ctrl-next {
   right: 0;
 }
 
-.slides-list{
+.slides-list {
   padding: 0;
   margin: 0;
   position: absolute;
@@ -166,26 +171,26 @@ SLIDER
   list-style: none;
 }
 
-.slides-item p{
+.slides-item p {
   color: #ffffff;
   margin: 0;
   padding: 0;
   text-transform: uppercase;
 }
 
-.slides-title{
+.slides-title {
   font-size: 60px;
   line-height: 104px;
   font-weight: 600;
 }
 
-.slides-descr{
+.slides-descr {
   font-size: 25px;
   line-height: 30px;
   font-weight: 300;
 }
 
-/* 
+/*
 MARKET
 */
 
@@ -207,13 +212,14 @@ MARKET
   margin: 0 auto;
   margin-top: 20px;
   display: block;
-  content: "";
+  content: '';
 }
 
 .market_place {
   margin-bottom: 94px;
   background-color: #e9f0fd;
 }
+
 .market {
   display: block;
   list-style: none;
