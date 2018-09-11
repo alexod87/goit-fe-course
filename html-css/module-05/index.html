@@ -39,13 +39,17 @@
     </nav>
   </header>
   <main>
-    <h1 class="visually-hidden">Татьяна, как Ваше настроение сегодня? ))</h1>
     <section>
+      <h1 class="visually-hidden">Татьяна, как Ваше настроение сегодня? ))</h1>
       <div class="slider">
         <div class="background">
           <div class="slider-title container">
-            <button class="slider-ctrl slider-ctrl-prev">Prev</button>
-            <button class="slider-ctrl slider-ctrl-next">Next</button>
+            <button class="slider-ctrl slider-ctrl-prev">
+              <img src="/img/angle-left.svg" alt="prev" width="104" height="104">
+            </button>
+            <button class="slider-ctrl slider-ctrl-next">
+              <img src="/img/angle-right.svg" alt="next" width="104" height="104">
+            </button>
             <ul class="slides-list">
               <li class="slides-item">
                 <p class="slides-title">AFFORDABLE PARIS TOURS</p>
@@ -57,39 +61,73 @@
       </div>
     </section>
     <section class="market_place">
-      <h2 class="article_head">new collection</h2>
-      <ul class="market clearfix container">
-        <li>
-          <img src="img/pic1.gif" alt="blue tshirt" width="255" height="322">
-          <div class="absolute">
-            <p class="product">blue tshirt</p>
-            <p class="price">$26</p>
-          </div>
-        </li>
-        <li>
-          <img src="img/pic2.gif" alt="woman shirt" width="255" height="322">
-          <div class="absolute">
-            <p class="product">woman shirt</p>
-            <p class="price">$31</p>
-          </div>
-        </li>
-        <li>
-          <img src="img/pic3.gif" alt="yellow tshirt" width="255" height="322">
-          <div class="absolute">
-            <p class="product">yellow tshirt</p>
-            <p class="price">$21</p>
-          </div>
-        </li>
-        <li>
-          <img src="img/pic4.gif" alt="cool lingerie" width="255" height="322">
-          <div class="absolute">
-            <p class="product">cool lingerie</p>
-            <p class="price">$56</p>
-          </div>
-        </li>
-      </ul>
+      <div class="container">
+        <h2 class="article_head">new collection</h2>
+        <ul class="market clearfix container">
+          <li>
+            <img src="img/pic1.gif" alt="blue tshirt" width="255" height="322">
+            <div class="absolute">
+              <p class="product">blue tshirt</p>
+              <p class="price">$26</p>
+            </div>
+            <div class="cover">
+              <ul class="icons clearfix">
+                <li>
+                  <a class="like" href="#">
+                    <img src="/img/like.svg" alt="like" width="50" height="50">
+                  </a>
+                </li>
+                <li>
+                  <a class="shuffle" href="#">
+                    <img src="/img/shuffle.svg" alt="shuffle" width="50" height="50">
+                  </a>
+                </li>
+                <li>
+                  <a class="later" href="#">
+                    <img src="/img/clock.svg" alt="clock" width="50" height="50">
+                  </a>
+                </li>
+                <li class="buy">
+                  <a href="#">
+                    <img src="/img/cart.svg" alt="cart" width="50" height="50">
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <img src="img/pic2.gif" alt="woman shirt" width="255" height="322">
+            <div class="absolute">
+              <p class="product">woman shirt</p>
+              <p class="price">$31</p>
+            </div>
+          </li>
+          <li>
+            <img src="img/pic3.gif" alt="yellow tshirt" width="255" height="322">
+            <div class="absolute">
+              <p class="product">yellow tshirt</p>
+              <p class="price">$21</p>
+            </div>
+          </li>
+          <li>
+            <img src="img/pic4.gif" alt="cool lingerie" width="255" height="322">
+            <div class="absolute">
+              <p class="product">cool lingerie</p>
+              <p class="price">$56</p>
+            </div>
+          </li>
+        </ul>
+      </div>
     </section>
   </main>
+
+  <footer class=" footer">
+    <div class="container">
+      <p class="copyright">All Rights Reserved &copy; Dokan | Designed
+        <a href="#">ThemenGraph</a>
+      </p>
+    </div>
+  </footer>
 </body>
 
 </html>

@@ -112,7 +112,6 @@ SLIDER
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  margin-bottom: 88px;
 }
 
 .background {
@@ -139,7 +138,8 @@ SLIDER
   width: 104px;
   height: 104px;
   border: 0;
-  background-color: #1abc9caa;
+  background-color: #1abc9c;
+  opacity: 0.7;
   position: absolute;
   top: 47%;
   transform: translateY(-50%);
@@ -149,11 +149,11 @@ SLIDER
 }
 
 .slider-ctrl:hover {
-  background-color: #1abc9c;
+  opacity: 1;
 }
 
 .slider-ctrl-prev {
-  left: 0;
+  margin: 0 auto;
 }
 
 .slider-ctrl-next {
@@ -195,6 +195,7 @@ MARKET
 */
 
 .article_head {
+  padding-top: 88px;
   margin: 0;
   text-transform: uppercase;
   color: #515151;
@@ -216,7 +217,7 @@ MARKET
 }
 
 .market_place {
-  margin-bottom: 94px;
+  padding-bottom: 100px;
   background-color: #e9f0fd;
 }
 
@@ -235,7 +236,7 @@ MARKET
   background: #e9f0fd;
   float: left;
   margin-right: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 0px;
   text-align: center;
 }
 
@@ -243,12 +244,8 @@ MARKET
   background-color: #1abc9c;
 }
 
-.market li:nth-child(4n) {
+.market li:last-child {
   margin-right: 0;
-}
-
-.market li:nth-last-child(-n + 4) {
-  margin-bottom: 0;
 }
 
 .absolute {
@@ -284,4 +281,104 @@ MARKET
   font-weight: 900;
   line-height: 40px;
   text-align: center;
+}
+
+/*
+COVER
+*/
+
+.cover {
+  width: 255px;
+  height: 282px;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.cover:hover {
+  opacity: 1;
+}
+
+.cover li {
+  background: none;
+  width: 50px;
+  height: 50px;
+  margin-right: 8px;
+  padding: 0;
+}
+
+.icons {
+  position: relative;
+  width: 166px;
+  margin: 0 auto;
+  padding: 0;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.icons a {
+  margin: 0 auto;
+  display: block;
+  border: 1px solid #fff;
+}
+
+.icons a:hover {
+  background-color: #1abc9c;
+}
+
+.cover li:nth-last-child(-n + 2) {
+  margin-right: 0;
+}
+
+.like:hover {
+  transform: translatey(-2px);
+}
+
+.shuffle:hover {
+  transform: translatey(-2px);
+}
+
+.later:hover {
+  transform: translatey(-2px);
+}
+
+.icons .buy {
+  width: 166px;
+  margin: 0 auto;
+  margin-top: 8px;
+  background-color: #323232;
+}
+
+.buy:hover {
+  transform: translateY(-2px);
+}
+
+.buy a img {
+  margin: 0 auto;
+}
+
+/*
+ FOOTER
+ */
+
+.footer {
+  background-color: #323232;
+  position: relative;
+}
+
+.copyright {
+  color: #f0f0f0;
+  margin: 0;
+  text-align: center;
+  padding: 36px 0;
+}
+
+.copyright a {
+  color: #1abc9c;
+  display: inline-block;
+  text-decoration: none;
 }
