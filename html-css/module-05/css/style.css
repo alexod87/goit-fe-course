@@ -104,25 +104,12 @@ SLIDER
 */
 
 .slider {
-  background-image: url(/img/main_pic.jpg);
+  background-image: url(../img/main.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
   min-height: 600px;
-}
-
-.slider:after {
-  content: '';
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.3);
-}
-
-.slider:hover:after {
-  display: none;
 }
 
 .slider-title {
@@ -151,12 +138,12 @@ SLIDER
 }
 
 .slider-ctrl-prev {
-  background-image: url(/img/left-arrow.png);
+  background-image: url(../img/left-arrow.png);
   margin: 0 auto;
 }
 
 .slider-ctrl-next {
-  background-image: url(/img/right-arrow.png);
+  background-image: url(../img/right-arrow.png);
   right: 0;
 }
 
@@ -340,15 +327,15 @@ COVER
 }
 
 .like {
-  background-image: url(/img/like.png);
+  background-image: url(../img/like.png);
 }
 
 .shuffle {
-  background-image: url(/img/shuffle.png);
+  background-image: url(../img/shuffle.png);
 }
 
 .later {
-  background-image: url(/img/clock.png);
+  background-image: url(../img/clock.png);
 }
 
 .buy {
@@ -360,7 +347,7 @@ COVER
   line-height: 50px;
   padding-left: 50px;
   color: #ffffffa7;
-  background-image: url(/img/cart.png);
+  background-image: url(../img/cart.png);
   background-position: 10px 10px;
   width: 166px;
   margin-top: 8px;
