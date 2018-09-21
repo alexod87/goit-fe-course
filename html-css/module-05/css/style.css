@@ -124,6 +124,7 @@ SLIDER
   height: 104px;
   border: 0;
   background-color: #1abc9c;
+  color: #ffffff;
   opacity: 0.7;
   position: absolute;
   top: 47%;
@@ -137,13 +138,7 @@ SLIDER
   opacity: 1;
 }
 
-.slider-ctrl-prev {
-  background-image: url(../img/left-arrow.png);
-  margin: 0 auto;
-}
-
 .slider-ctrl-next {
-  background-image: url(../img/right-arrow.png);
   right: 0;
 }
 
@@ -215,7 +210,7 @@ MARKET
   padding: 0;
 }
 
-.market li {
+.market-li {
   display: block;
   position: relative;
   width: 255px;
@@ -227,7 +222,7 @@ MARKET
   text-align: center;
 }
 
-.market li:hover .product {
+.market-li:hover .product {
   background-color: #1abc9c;
 }
 
@@ -285,21 +280,19 @@ COVER
   left: 0;
 }
 
-.market li:hover .cover {
+.market-li:hover .cover {
   opacity: 1;
 }
 
 .cover li {
+  list-style: none;
   float: left;
   background: none;
-  width: 50px;
-  height: 50px;
   margin-right: 8px;
   padding: 0px;
 }
 
 .icons {
-  width: 170px;
   margin: 0 auto;
   padding: 0;
   position: absolute;
@@ -310,7 +303,9 @@ COVER
 
 .icons a {
   height: 50px;
+  width: 50px;
   display: block;
+  color: rgba(255, 255, 255, 0.7);
   border: 1px solid #ffffff;
   background-size: 30px 30px;
   background-position: center;
@@ -319,26 +314,11 @@ COVER
 
 .icons a:hover {
   background-color: #1abc9c;
-  transform: translatey(-5px);
+  transform: translatey(-2px);
 }
 
 .cover li:nth-last-child(-n + 2) {
   margin-right: 0;
-}
-
-.like {
-  background-image: url(../img/like.png);
-}
-
-.shuffle {
-  background-image: url(../img/shuffle.png);
-}
-
-.later {
-  background-image: url(../img/clock.png);
-}
-
-.buy {
 }
 
 .icons .buy a {
@@ -346,7 +326,7 @@ COVER
   text-decoration: none;
   line-height: 50px;
   padding-left: 50px;
-  color: #ffffffa7;
+  color: rgba(255, 255, 255, 0.7);
   background-image: url(../img/cart.png);
   background-position: 10px 10px;
   width: 166px;
