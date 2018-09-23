@@ -138,7 +138,11 @@ SLIDER
   opacity: 1;
 }
 
+.slider-ctrl-prev {
+  background-image: url(../img/left-arrow.png);
+}
 .slider-ctrl-next {
+  background-image: url(../img/right-arrow.png);
   right: 0;
 }
 
@@ -321,14 +325,22 @@ COVER
   margin-right: 0;
 }
 
+.like {
+  background-image: url(../img/like.png);
+}
+
+.shuffle {
+  background-image: url(../img/shuffle.png);
+}
+
+.later {
+  background-image: url(../img/clock.png);
+}
+
 .icons .buy a {
-  text-transform: uppercase;
-  text-decoration: none;
-  line-height: 50px;
-  padding-left: 50px;
-  color: rgba(255, 255, 255, 0.7);
-  background-image: url(../img/cart.png);
-  background-position: 10px 10px;
+  background-image: url(../img/cart.png), url(../img/add-to-cart.png);
+  background-position: 10px 10px, 70% center;
+  background-size: 30px 30px, 87px 16px;
   width: 166px;
   margin-top: 8px;
 }
