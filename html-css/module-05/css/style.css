@@ -141,6 +141,7 @@ SLIDER
 .slider-ctrl-prev {
   background-image: url(../img/left-arrow.png);
 }
+
 .slider-ctrl-next {
   background-image: url(../img/right-arrow.png);
   right: 0;
@@ -316,11 +317,6 @@ COVER
   background-repeat: no-repeat;
 }
 
-.icons a:hover {
-  background-color: #1abc9c;
-  transform: translatey(-2px);
-}
-
 .cover li:nth-last-child(-n + 2) {
   margin-right: 0;
 }
@@ -338,11 +334,17 @@ COVER
 }
 
 .icons .buy a {
-  background-image: url(../img/cart.png), url(../img/add-to-cart.png);
-  background-position: 10px 10px, 70% center;
+  background: url(../img/cart.png), url(../img/add-to-cart.png), #323232;
+  background-repeat: no-repeat, no-repeat;
+  background-position: 10px 10px, 70% center, 100%;
   background-size: 30px 30px, 87px 16px;
   width: 166px;
   margin-top: 8px;
+}
+
+.icons a:hover {
+  background-color: #1abc9c;
+  transform: translatey(-2px);
 }
 
 /*
