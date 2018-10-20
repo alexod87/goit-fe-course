@@ -1,5 +1,6 @@
 html {
   box-sizing: border-box;
+  font-size: 62.5%;
 }
 
 *,
@@ -30,19 +31,135 @@ input[type='radio'].visually-hidden {
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'mon2', serif;
   margin: 0px;
   padding: 0px;
-  margin-bottom: 20px;
+  margin-bottom: 2rem;
+}
+
+@font-face {
+  font-family: 'mon1';
+  font-weight: 400;
+  font-style: normal;
+  src: url('../fonts/montserrat-v12-latin-regular.woff2') format('woff2'),
+    url('../fonts/montserrat-v12-latin-regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'mon2';
+  font-weight: 700;
+  font-style: normal;
+  src: url('../fonts/montserrat-v12-latin-700.woff2') format('woff2'),
+    url('../fonts/montserrat-v12-latin-700.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'roboto';
+  font-weight: normal;
+  font-style: normal;
+  src: url('../fonts/roboto-slab-v7-latin-regular.woff2') format('woff2'),
+    url('../fonts/roboto-slab-v7-latin-regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'eb';
+  font-weight: normal;
+  font-style: normal;
+  src: url('../fonts/eb-garamond-v9-latin-regular.woff2') format('woff2'),
+    url('../fonts/eb-garamond-v9-latin-regular.woff') format('woff');
 }
 
 .container {
-  width: 940px;
+  width: 94rem;
   margin: 0 auto;
 }
 
 /* HEADER */
+.page-header {
+  text-transform: uppercase;
+  margin-bottom: 13rem;
+  margin-top: 5rem;
+}
+
+.logo {
+  display: block;
+  position: absolute;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-family: 'wisdom script', serif;
+  font-size: 2.6rem;
+  color: #fed136;
+}
+
+.nav {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 1.4rem;
+}
+
+.nav li {
+  list-style: none;
+}
+
+.nav a {
+  display: block;
+  padding: 1.5rem 1.75rem;
+  text-decoration: none;
+  color: #222222;
+  transition: 200ms linear;
+}
+
+.nav li:last-child a {
+  padding-right: 0;
+}
+
+.nav li:hover a {
+  color: #fed136;
+  transition: 200ms linear;
+}
 
 /* SERVICES */
+
+.title {
+  font-size: 4rem;
+  text-transform: uppercase;
+  text-align: center;
+  color: #222222;
+}
+
+.sub-title {
+  font-family: eb, sans-serif;
+  font-size: 1.4rem;
+  text-align: center;
+  color: #777777;
+}
+
+.list-icon {
+  fill: #fed136;
+  width: 7.5rem;
+  height: 7.5rem;
+  border: #fed136 3px solid;
+  border-radius: 7.5rem;
+  padding: 1.4rem;
+}
+
+.services-menu {
+}
+
+.services-li {
+  width: 29rem;
+}
+
+/* .services-title {
+  margin: 0;
+  padding: 0;
+}
+
+.services-text {
+  margin: 0;
+  padding: 0;
+} */
 
 /* CONTACT US */
