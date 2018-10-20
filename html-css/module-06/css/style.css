@@ -8,12 +8,6 @@ html {
   box-sizing: inherit;
 }
 
-/* .clearfix::after {
-  display: table;
-  content: '';
-  clear: both;
-} */
-
 img {
   display: block;
   max-width: 100%;
@@ -36,8 +30,6 @@ input[type='radio'].visually-hidden {
 }
 
 body {
-  font-family: 'Roboto', italic;
-  font-family: 'Kaushan Script', cursive;
   font-family: 'Montserrat', sans-serif;
   margin: 0px;
   padding: 0px;
@@ -54,9 +46,11 @@ body {
 .page-header {
   text-transform: uppercase;
   margin-bottom: 110px;
+  margin-top: 37px;
 }
 
 .logo {
+  display: block;
   position: absolute;
   top: 28px;
 }
@@ -67,7 +61,6 @@ body {
   display: flex;
   justify-content: flex-end;
   font-size: 14px;
-  margin-top: 37px;
 }
 
 .nav li {
@@ -75,6 +68,7 @@ body {
 }
 
 .nav a {
+  display: block;
   padding: 15px 27.5px;
   text-decoration: none;
   color: #1abc9c;
@@ -92,14 +86,16 @@ body {
   margin-top: 10px;
   display: block;
   content: '';
+  transition: width 200ms linear;
 }
 
 .nav li:hover a {
-  animation: nav_cover 200ms linear normal forwards;
+  color: #f38181;
+  transition: 200ms linear;
 }
 
 .nav li:hover:after {
-  animation: nav_cover 200ms linear normal forwards;
+  width: 70%;
 }
 
 /* SECTION 1 */
@@ -124,14 +120,19 @@ body {
   text-transform: uppercase;
 }
 
-.title {
+.section-header .title {
   margin: 0;
   padding: 0;
   text-align: center;
   font-size: 30px;
+  font-weight: 700;
   color: #515151;
   text-transform: uppercase;
   line-height: 1.2;
+}
+
+.section-header {
+  margin-bottom: 34px;
 }
 
 .title::after {
@@ -140,7 +141,6 @@ body {
   height: 4px;
   margin: 0 auto;
   margin-top: 34px;
-  margin-bottom: 34px;
   display: block;
   content: '';
 }
