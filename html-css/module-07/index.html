@@ -12,7 +12,7 @@
 
 <body>
   <header class="page-header container">
-    <nav>
+    <nav class="nav-global">
       <a class="logo" href="#" target="_self">golden</a>
       <ul class="nav">
         <li class="nav-li">
@@ -34,7 +34,7 @@
     </nav>
   </header>
   <main class="main">
-    <section class="container">
+    <section class="services container">
       <h1 class="visually-hidden">Golden_Servisces</h1>
       <header class="section-header">
         <h2 class="title">services</h2>
@@ -45,8 +45,8 @@
           <svg class="list-icon">
             <use href="img/svg/SVG-sprite.svg#basket"></use>
           </svg>
-          <h3 class="service-title">e-commerce</h3>
-          <p class="service-text">Proin iaculis purus consequat sem cure
+          <h3 class="services-title">e-commerce</h3>
+          <p class="services-text">Proin iaculis purus consequat sem cure
             digni ssim. Donec porttitora entum suscipit
             aenean rhoncus posuere odio in tincidunt.</p>
         </li>
@@ -54,8 +54,8 @@
           <svg class="list-icon">
             <use href="img/svg/SVG-sprite.svg#laptop"></use>
           </svg>
-          <h3 class="service-title">responcive web</h3>
-          <p class="service-text">Proin iaculis purus consequat sem cure
+          <h3 class="services-title">responcive web</h3>
+          <p class="services-text">Proin iaculis purus consequat sem cure
             digni ssim. Donec porttitora entum suscipit
             aenean rhoncus posuere odio in tincidunt.</p>
         </li>
@@ -63,25 +63,30 @@
           <svg class="list-icon">
             <use href="img/svg/SVG-sprite.svg#lock"></use>
           </svg>
-          <h3 class="service-title">creativity</h3>
-          <p class="service-text">Proin iaculis purus consequat sem cure
+          <h3 class="services-title">web security</h3>
+          <p class="services-text"> Proin iaculis purus consequat sem cure
             digni ssim. Donec porttitora entum suscipit
             aenean rhoncus posuere odio in tincidunt.</p>
         </li>
       </ul>
     </section>
-    <section class="container">
+    <section class="cu">
       <header class="section-header">
-        <h2 class="title">contact us</h2>
-        <p class="sub-title">proin iaculis purus consequat sem cure.</p>
+        <h2 class="title-cu">contact us</h2>
+        <p class="sub-title-cu">Proin iaculis purus consequat sem cure.</p>
       </header>
-      <form action="#" method="get" autocomplete="on">
+      <form class="container" action="#" method="get" autocomplete="on">
+        <div class="form2">
 
-        <input type="text" name="name" id="name" placeholder="your name *" required>
-        <input type="email" name="e-mail" id="e-mail" placeholder="your e-mail *" required>
-        <input type="text" name="subject" id="subject" placeholder="subject">
-        <textarea name="text" id="text" cols="30" rows="10" placeholder="your message *" required></textarea>
-        <button type="submit">send message</button>
+          <div class="form">
+            <input class="form-input" type="text" name="name" id="name" placeholder="your name *" required>
+            <input class="form-input" type="email" name="e-mail" id="e-mail" placeholder="your e-mail *" required>
+            <input class="form-input" type="text" name="subject" id="subject" placeholder="subject">
+          </div>
+          <textarea class="form-input message" name="text" id="text" cols="30" rows="10" placeholder="your message *"
+            required></textarea>
+        </div>
+        <button class="button" type="submit">send message</button>
 
       </form>
     </section>
