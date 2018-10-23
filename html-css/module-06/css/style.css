@@ -14,26 +14,11 @@ img {
   height: auto;
 }
 
-.visually-hidden:not(:focus):not(:active),
-input[type='checkbox'].visually-hidden,
-input[type='radio'].visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
 body {
   font-family: 'Montserrat', sans-serif;
   margin: 0px;
   padding: 0px;
-  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 .container {
@@ -45,14 +30,18 @@ body {
 
 .page-header {
   text-transform: uppercase;
-  margin-bottom: 110px;
-  margin-top: 37px;
+  margin-bottom: 90px;
 }
 
 .logo {
   display: block;
-  position: absolute;
-  top: 28px;
+}
+
+.nav-global {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 65px;
 }
 
 .nav {
@@ -69,7 +58,7 @@ body {
 
 .nav a {
   display: block;
-  padding: 15px 27.5px;
+  padding: 0px 27.5px;
   text-decoration: none;
   color: #1abc9c;
 }
@@ -81,7 +70,7 @@ body {
 .nav li::after {
   background-color: #f38181;
   width: 0%;
-  height: 2px;
+  height: 3px;
   margin: 0 auto;
   margin-top: 10px;
   display: block;
@@ -101,7 +90,7 @@ body {
 /* SECTION 1 */
 
 .main {
-  margin-bottom: 78px;
+  margin-bottom: 80px;
 }
 
 .pre-title {
@@ -147,8 +136,8 @@ body {
 
 .paragraph {
   margin: 0 auto;
-  padding-top: 6px;
-  margin-bottom: 90px;
+  padding-top: 42px;
+  margin-bottom: 88px;
   font-size: 15px;
   width: 960px;
   font-family: 'Roboto', serif;
@@ -209,40 +198,45 @@ body {
 
 .team-list {
   margin: 0;
-  margin-bottom: 30px;
   padding: 0;
   list-style: none;
   display: flex;
   justify-content: space-between;
 }
 
-.team-list p {
-  margin: 0;
-}
-
 .cover {
-  background: linear-gradient(#ef8a8a, #e5d083);
   position: relative;
-  margin-bottom: 26px;
-  opacity: 1;
-  transition: all 0.2s linear;
+  margin-bottom: 30px;
+  transition: all 200ms linear;
 }
 
 .sub-cover {
+  opacity: 0;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  display: flex;
-  transition: transform 0.2s linear, opacity 0.2s linear;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 470px;
+  cursor: pointer;
+  background: linear-gradient(
+    to bottom,
+    rgba(252, 227, 138, 0.9) 0%,
+    rgba(243, 129, 129, 0.9) 100%
+  );
+  transition: transform 200ms linear, opacity 200ms linear;
 }
 
-.sub-cover a {
-  opacity: 0;
-  margin: 1px;
-  background-color: #fce38a;
-  width: 55px;
-  height: 55px;
+.cover:hover .sub-cover {
+  opacity: 1;
+  transition: opacity 200ms linear;
+}
+
+.cover:hover {
+  cursor: pointer;
+  transform: translate(-10px, -10px);
+  box-shadow: 10px 10px 0 #95e1d3;
+  transition: box-shadow 200ms linear, transform 200ms linear;
 }
 
 .socials {
@@ -259,28 +253,16 @@ body {
 
 .socials a {
   display: block;
-  width: 56px;
-  height: 56px;
+  margin: 1px;
+  background-color: #fce38a;
+  width: 55px;
+  height: 55px;
+  transition: background-color 200ms linear;
 }
 
-.cover:hover {
-  transform: translate(-10px, -10px);
-  box-shadow: 10px 10px 0 rgba(149, 225, 211, 1);
-  transition: box-shadow 0.2s linear, transform 0.2s linear;
-}
-
-.cover:hover img {
-  opacity: 0.5;
-  transition: opacity 0.2s linear, transform 0.2s linear;
-}
-
-.sub-cover a:hover {
+.socials a:hover {
   background-color: #95e1d3;
-}
-
-.cover:hover .sub-cover a {
-  opacity: 1;
-  transition: opacity 0.2s linear, transform 0.2s linear;
+  transition: background-color 200ms linear;
 }
 
 .facebook {
@@ -299,22 +281,26 @@ body {
   background: url(../img/instagram.png) center no-repeat;
 }
 
-.name {
-  padding-bottom: 8px;
-  font-size: 14px;
+.team-member p {
+  text-align: center;
   color: #515151;
+}
+
+.name {
+  margin: 0;
+  margin-bottom: 6px;
+
+  font-size: 14px;
   text-transform: uppercase;
   line-height: 1.2;
-  text-align: center;
 }
 
 .role {
-  color: #515151;
+  margin: 0;
   font-size: 15px;
   font-family: 'Roboto';
   font-style: italic;
   line-height: 1.6;
-  text-align: center;
   text-transform: capitalize;
 }
 
@@ -324,7 +310,7 @@ body {
   display: flex;
   justify-content: space-between;
   border-top: 1px solid rgba(0, 0, 0, 0.4);
-  padding-top: 15px;
+  padding: 15px 0px;
 }
 
 .copyright {
