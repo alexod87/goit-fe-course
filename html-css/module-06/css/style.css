@@ -159,22 +159,27 @@ body {
 }
 
 .services-li {
-  margin: 30px;
-  flex-direction: row;
-  width: 340px;
+  position: relative;
+  margin-top: 34px;
+  margin-bottom: 25px;
+  padding-left: 30px;
+  width: 400px;
   height: 110px;
-}
-
-.services-li a {
   text-decoration: none;
   color: #515151;
 }
 
-.services-li img {
+.services-li::before {
+  top: 0;
+  left: 30px;
+  display: block;
   position: absolute;
+  content: '';
+  height: 32px;
+  width: 32px;
 }
 
-.services-li a h3 {
+.services-li h3 {
   margin: 0;
   padding-bottom: 10px;
   font-size: 14px;
@@ -184,7 +189,7 @@ body {
   text-align: left;
 }
 
-.services-li a p {
+.services-li p {
   margin: 0;
   padding-left: 60px;
   padding-bottom: 60px;
@@ -192,6 +197,30 @@ body {
   font-family: 'Roboto';
   line-height: 1.6;
   text-align: left;
+}
+
+.alarm::before {
+  background: url(../img/ALARM.png);
+}
+
+.web::before {
+  background: url(../img/LINEGRAPH.png);
+}
+
+.creativity::before {
+  background: url(../img/COMPUTER.png);
+}
+
+.seo::before {
+  background: url(../img/BOOK2.png);
+}
+
+.home::before {
+  background: url(../img/HOME.png);
+}
+
+.digital::before {
+  background: url(../img/IMAGE.png);
 }
 
 /* TEAM LIST */
