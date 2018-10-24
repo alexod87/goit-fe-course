@@ -78,7 +78,6 @@ body {
 .page-header {
   text-transform: uppercase;
   margin-bottom: 10rem;
-  margin-top: 3.8rem;
 }
 
 .nav-global {
@@ -92,7 +91,6 @@ body {
   text-transform: capitalize;
   font-family: 'wisdom script', serif;
   font-size: 2.6rem;
-  padding-left: 0.8rem;
   color: #fed136;
 }
 
@@ -128,7 +126,7 @@ body {
 /* SERVICES */
 
 .section-header {
-  margin-bottom: 7.5rem;
+  padding-bottom: 7.5rem;
 }
 
 .title {
@@ -208,7 +206,7 @@ body {
 /* CONTACT US */
 .cu {
   padding-top: 10rem;
-  background: #777777 url(../img/Map_Image.png) no-repeat bottom right fixed;
+  background: url(../img/Map-Image.png) no-repeat bottom center fixed;
   padding-bottom: 11rem;
 }
 
@@ -258,6 +256,16 @@ body {
   height: 5rem;
   width: 45.5rem;
   padding: 2rem;
+}
+
+.form input:invalid,
+.form2 textarea:invalid {
+  outline-color: #ff0000;
+}
+
+.form input:valid,
+.form2 textarea:valid {
+  outline-color: #00ff00;
 }
 
 .message {
