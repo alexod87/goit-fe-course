@@ -8,6 +8,21 @@ html {
   box-sizing: inherit;
 }
 
+.visually-hidden:not(:focus):not(:active),
+input[type='checkbox'].visually-hidden,
+input[type='radio'].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 img {
   display: block;
   max-width: 100%;
@@ -18,7 +33,6 @@ body {
   font-family: 'Montserrat', sans-serif;
   margin: 0px;
   padding: 0px;
-  margin-top: 20px;
 }
 
 .container {
@@ -29,6 +43,7 @@ body {
 /* HEADER */
 
 .page-header {
+  padding-top: 20px;
   text-transform: uppercase;
   margin-bottom: 90px;
 }
@@ -88,10 +103,6 @@ body {
 }
 
 /* SECTION 1 */
-
-.main {
-  margin-bottom: 80px;
-}
 
 .pre-title {
   font-family: 'Kaushan Script', cursive;
@@ -200,27 +211,27 @@ body {
 }
 
 .alarm::before {
-  background: url(../img/ALARM.png);
+  background: url(../img/ALARM.png) center no-repeat;
 }
 
 .web::before {
-  background: url(../img/LINEGRAPH.png);
+  background: url(../img/LINEGRAPH.png) center no-repeat;
 }
 
 .creativity::before {
-  background: url(../img/COMPUTER.png);
+  background: url(../img/COMPUTER.png) center no-repeat;
 }
 
 .seo::before {
-  background: url(../img/BOOK2.png);
+  background: url(../img/BOOK2.png) center no-repeat;
 }
 
 .home::before {
-  background: url(../img/HOME.png);
+  background: url(../img/HOME.png) center no-repeat;
 }
 
 .digital::before {
-  background: url(../img/IMAGE.png);
+  background: url(../img/IMAGE.png) center no-repeat;
 }
 
 /* TEAM LIST */
@@ -235,8 +246,9 @@ body {
 
 .cover {
   position: relative;
+  width: 380px;
   margin-bottom: 30px;
-  transition: all 200ms linear;
+  transition: 200ms linear;
 }
 
 .sub-cover {
@@ -259,9 +271,6 @@ body {
 .cover:hover .sub-cover {
   opacity: 1;
   transition: opacity 200ms linear;
-}
-
-.cover:hover {
   cursor: pointer;
   transform: translate(-10px, -10px);
   box-shadow: 10px 10px 0 #95e1d3;
@@ -310,6 +319,10 @@ body {
   background: url(../img/instagram.png) center no-repeat;
 }
 
+.team-member {
+  margin-top: 30px;
+}
+
 .team-member p {
   text-align: center;
   color: #515151;
@@ -331,6 +344,10 @@ body {
   font-style: italic;
   line-height: 1.6;
   text-transform: capitalize;
+}
+
+.our-team {
+  padding-bottom: 80px;
 }
 
 /* FOOTER */
