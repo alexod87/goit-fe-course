@@ -62,6 +62,7 @@ body {
 /* HEADER */
 
 .header-main {
+  position: relative;
   padding-top: 3rem;
   margin-bottom: 17.5rem;
 }
@@ -134,7 +135,7 @@ body {
   text-align: center;
 }
 
-.find {
+/* .find {
   padding: 0;
   border: 2px rgb(255, 78, 80) solid;
   border-radius: 2rem;
@@ -161,6 +162,31 @@ body {
 .find:hover .find-partner {
   color: rgb(255, 255, 255);
 
+  transition: 200ms linear;
+} */
+
+.find {
+}
+
+.find-partner {
+  display: block;
+  padding: 0;
+  border: 2px rgb(255, 78, 80) solid;
+  border-radius: 2rem;
+  background-color: rgba(255, 255, 255, 0);
+  width: 28rem;
+  height: 4rem;
+  text-decoration: none;
+  font-size: 1.4rem;
+  color: rgb(255, 78, 80);
+  line-height: 2.8;
+  text-align: center;
+  transition: 200ms linear;
+}
+
+.find-partner:hover {
+  background-color: rgb(255, 78, 80);
+  color: rgb(255, 255, 255);
   transition: 200ms linear;
 }
 
@@ -219,4 +245,121 @@ body {
   color: rgb(102, 102, 102);
   line-height: 1.2;
   text-align: center;
+}
+
+/* MEDIA */
+
+@media (min-width: 768px) {
+  .container {
+    width: 76.8rem;
+    padding-bottom: 23.5rem;
+  }
+
+  .header-main {
+    margin: 0 auto;
+    width: 66rem;
+    padding-top: 5rem;
+    margin-bottom: 15rem;
+  }
+
+  .logo {
+    left: 0;
+    top: 5rem;
+    transform: translate(0);
+  }
+
+  .header-menu {
+    justify-content: flex-end;
+  }
+
+  .first-section {
+    margin: 0 auto;
+    width: 66rem;
+  }
+
+  .section-header {
+    margin-bottom: 3rem;
+  }
+
+  .section-title {
+    font-size: 5rem;
+    margin-bottom: 3rem;
+  }
+
+  .post-title {
+    width: 66rem;
+    font-size: 2.4rem;
+  }
+
+  .find {
+    width: 22rem;
+  }
+
+  .main {
+    width: 66rem;
+  }
+
+  .main-meet {
+    margin-bottom: 4rem;
+  }
+
+  .partners {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 52rem;
+    margin-bottom: 7rem;
+  }
+
+  .partner-item {
+    width: 23.6rem;
+  }
+
+  .partner-item:not(:nth-last-child(-n + 1)) {
+    margin-bottom: 0;
+  }
+
+  .partner-item:not(:nth-last-child(-n + 2)) {
+    margin-bottom: 3.8rem;
+  }
+}
+
+@media (min-width: 1112px) {
+  .container {
+    width: 144rem;
+  }
+
+  .header-main {
+    margin: 0 auto;
+    width: 94rem;
+    margin-bottom: 15rem;
+  }
+
+  .section-title {
+    margin: 0 auto;
+    width: 50rem;
+    margin-bottom: 3rem;
+  }
+
+  .main {
+    width: 94rem;
+  }
+
+  .partners {
+    width: 94rem;
+    justify-content: space-between;
+    margin-bottom: 3.5rem;
+  }
+
+  .partner-item {
+    width: 22.2rem;
+  }
+
+  .partner-item:not(:nth-last-child(-n + 1)) {
+    margin-bottom: 0;
+  }
+
+  .partner-item:not(:nth-last-child(-n + 2)) {
+    margin-bottom: 0;
+  }
 }
