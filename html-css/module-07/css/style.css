@@ -76,6 +76,7 @@ body {
 
 /* HEADER */
 .page-header {
+  padding-top: 3.7rem;
   text-transform: uppercase;
   margin-bottom: 10rem;
 }
@@ -126,7 +127,7 @@ body {
 /* SERVICES */
 
 .section-header {
-  padding-bottom: 7.5rem;
+  margin-bottom: 7.5rem;
 }
 
 .title {
@@ -200,11 +201,11 @@ body {
 }
 
 .services {
-  margin-bottom: 10rem;
+  padding-bottom: 10rem;
 }
 
 /* CONTACT US */
-.cu {
+.contact-us {
   padding-top: 10rem;
   background: url(../img/Map-Image.png) no-repeat bottom center fixed;
   padding-bottom: 11rem;
