@@ -224,9 +224,65 @@ body {
   margin-bottom: 2.8rem;
 }
 
+.partner-item {
+  position: relative;
+}
+
 .partner-pic {
   margin: 0 auto;
   margin-bottom: 1.6rem;
+}
+
+.icon1 {
+  position: absolute;
+  top: 8.4rem;
+  right: 5rem;
+  background: rgb(255, 78, 80);
+  border: 5px #ffffff solid;
+  border-radius: 2rem;
+  padding: 6px;
+  fill: #ffffff;
+  width: 4rem;
+  height: 4rem;
+}
+
+.icon2 {
+  position: absolute;
+  top: 8.4rem;
+  right: 5rem;
+  background: #1cd7ad;
+  border: 5px #ffffff solid;
+  border-radius: 2rem;
+  padding: 6px;
+  fill: #ffffff;
+  width: 4rem;
+  height: 4rem;
+}
+
+.icon3 {
+  position: absolute;
+  top: 8.4rem;
+  right: 5rem;
+  background: #ffa507;
+  border: 5px #ffffff solid;
+  border-radius: 2rem;
+  padding: 6px;
+  fill: #ffffff;
+  width: 4rem;
+  height: 4rem;
+}
+
+.icon4 {
+  position: absolute;
+  top: 8.4rem;
+  right: 5rem;
+  background: #4e73db;
+  border: 5px #ffffff solid;
+  border-radius: 2rem;
+  padding: 6px;
+  fill: #ffffff;
+  width: 4rem;
+  height: 4rem;
 }
 
 .name {
