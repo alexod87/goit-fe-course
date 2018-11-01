@@ -63,6 +63,7 @@ body {
   flex-direction: column;
   align-items: center;
   background: rgba(0, 0, 0, 0.5) url(../img/main_bg.png) center no-repeat;
+  background-size: cover;
   padding-bottom: 13.5rem;
 }
 
@@ -70,7 +71,7 @@ body {
   display: flex;
   flex-direction: column-reverse;
   padding-top: 3rem;
-  margin-bottom: 2.7rem;
+  margin-bottom: 10rem;
 }
 
 .logo {
@@ -88,10 +89,10 @@ body {
   list-style: none;
   margin: 0;
   padding: 0;
-  margin-bottom: 12.5rem;
 }
 
 .header-menu-item {
+  display: block;
   text-decoration: none;
   font-size: 1.4rem;
   color: rgb(255, 255, 255);
@@ -168,14 +169,14 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 6.6rem;
 }
 
 .second-section {
+  padding-top: 6rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 3rem;
+  padding-bottom: 3rem;
 }
 
 .main-meet {
@@ -272,14 +273,14 @@ body {
 
   .header {
     padding-top: 1.8rem;
-    padding-bottom: 23rem;
+    padding-bottom: 24rem;
   }
 
   .header-main {
     flex-direction: row;
     justify-content: space-between;
     width: 66rem;
-    margin-bottom: 3rem;
+    margin-bottom: 13rem;
   }
 
   .logo {
@@ -336,19 +337,11 @@ body {
   .pic-wrap {
     margin-bottom: 1.6rem;
   }
-
-  .name {
-  }
 }
 
-@media (min-width: 1112px) {
+@media (min-width: 958px) {
   .container {
-    width: 140rem;
-  }
-
-  .header {
-    padding-top: 1.8rem;
-    padding-bottom: 23rem;
+    width: 94.2rem;
   }
 
   .header-main {
