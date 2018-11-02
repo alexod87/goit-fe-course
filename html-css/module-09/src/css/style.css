@@ -75,6 +75,7 @@ body {
 }
 
 .logo {
+  padding-top: 10rem;
   align-self: center;
   text-transform: uppercase;
   text-decoration: none;
@@ -206,10 +207,6 @@ body {
   margin-bottom: 2.8rem;
 }
 
-.partner-pic {
-  /* margin-bottom: 1.6rem; */
-}
-
 .pic-wrap {
   position: relative;
   width: 12.2rem;
@@ -222,10 +219,11 @@ body {
   height: 4rem;
   bottom: 0;
   right: 0;
+
   display: block;
   content: '';
   box-sizing: border-box;
-  border: solid 3px #fff;
+  border: solid 3px rgb(255, 255, 255);
   border-radius: 50%;
 }
 
@@ -257,7 +255,7 @@ body {
 .hobbies {
   margin: 0;
   font-size: 1.4rem;
-  font-family: Roboto, sans-serif;
+  font-family: roboto, sans-serif;
   color: rgb(102, 102, 102);
   line-height: 1.2;
   text-align: center;
@@ -283,6 +281,7 @@ body {
   }
 
   .logo {
+    padding-top: 0;
     align-self: auto;
   }
 
