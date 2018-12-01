@@ -146,6 +146,12 @@ img {
   justify-content: space-between;
 }
 
+.menu-icon {
+  width: 2rem;
+  height: 2rem;
+  fill: #fff;
+}
+
 .menu__link {
   font-size: 1.4rem;
   color: #ffffff;
@@ -332,8 +338,16 @@ main header {
   position: absolute;
 }
 
+.button-icon {
+  position: absolute;
+  left: 1rem;
+  width: 3rem;
+  height: 3rem;
+  fill: #63ceba;
+}
+
 .service__icon--alarm::before {
-  background: url(../img/icons/alarm.svg) no-repeat center;
+  background: url(..img/svg/SVG-sprite.svg#alarm-clock) no-repeat center;
 }
 
 .service__icon--graph::before {
@@ -542,7 +556,7 @@ main header {
 }
 
 .socials__item:hover {
-  background-color: #95e1d3;
+  background-color: #f38181;
 }
 
 .socials__icons--icon {
