@@ -202,11 +202,8 @@ img {
   flex-basis: 9rem;
 }
 
-.options__link--search,
-.options__link--cart {
-  display: block;
-  width: 1.8rem;
-  height: 1.8rem;
+.options__link:hover .menu-icon {
+  fill: #fce38a;
 }
 
 .banner {
